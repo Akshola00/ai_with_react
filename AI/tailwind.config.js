@@ -9,6 +9,7 @@ export default {
        fontFamily: {
         'Roboto': ['"Roboto"', 'cursive'],
         'Fredoka': ['"Fredoka"', 'cursive'],
+        'Anta': ['"Anta"', 'cursive'],
       },
     },
   },
