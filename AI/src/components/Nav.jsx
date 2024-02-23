@@ -8,8 +8,9 @@ import DarkMode from "./DarkMode";
 
 function Nav() {
   return (
-    <div>
-      <nav className="flex bg-blue-400 text-xl pl-8 pr-20 pt-5 pb-5 items-center justify-between font-Fredoka">
+    <div> 
+      
+      <nav className="flex text-[color:var(--text-color)]  bg-[color:var(--body-backgorund)]  text-xl pl-8 pr-20 pt-5 pb-5 items-center justify-between font-Fredoka ">
         <div className="flex w-400px ml-32 items-center">
           <div className=" h-8 w-8 truncate">
             <img className="" src={logo} alt="Logo" />
@@ -24,7 +25,7 @@ function Nav() {
                 icon={faSearch}
               />
               <input
-                className=" outline-none p-1 rounded-full border-none bg-white pl-12 h-13 w-full text-lg"
+                className="outline-none p-1 rounded-full border-solid shadow-lg bg-white pl-12 h-13 w-full text-lg"
                 type="text"
                 name="search"
                 placeholder="Search..."
@@ -35,7 +36,7 @@ function Nav() {
             </li>
             <li>
               <Link to="/About">Home</Link>
-              <p className=" w-8 translate-x-3 h-1 absolute bg-slate-950 rounded-full"></p>
+              <p className=" w-8 translate-x-3 h-1 absolute bg-[color:var(--text-color)]  rounded-full"></p>
             </li>
             <li>
               <Link to="/About">About</Link>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            box-sizing: border-box;
+        }
+        body {
+            background: #e3edf7;
+        }
+        .accordion {
+            margin: 60px auto;
+            width: 600px;
+        }
+        .accordion li {
+            list-style: none;
+            width: 100%;
+            margin: 20px;
+            padding: 10px;
+            border-radius: 8px;
+            background: #e3edf7;
+            box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+            -6px -6px 10px -1px rgba(225, 225, 225, 0.15);
+        }
+        .accordion li label {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        label::before{
+            content: "+";
+            margin-right: 10px;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        input[type="radio"] {
+            display: none;
+        }
+        .accordion .content {
+            color: #555;
+            padding: 0 10;
+            line-height: 26px;
+            max-height: 0 ;
+            overflow: hidden;
+            transition: max-height 0.5s, padding .5s;
+        }
+        .accordion input[type="radio"]:checked + label + .content {
+            max-height: 400px;
+            padding: 10px 10px 20px;
+        }
+        .accordion input[type="radio"]:checked + label::before {
+            content: "-";
+        }
+    </style>
+  </head>
+  <body>
+    <ul class="accordion">
+
+      <li>
+        <input type="radio" name="accordion" id="first" checked />
+        <label for="first">Products</label>
+        <div class="content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+          deleniti ratione ullam illo sunt aliquid id sequi asperiores.
+          Corporis, ipsa libero nulla quaerat dolore officiis expedita
+          reprehenderit tempore hic id?
+        </div>
+      </li>
+      
+
+      <li>
+        <input type="radio" name="accordion" id="second" />
+        <label for="second">Information</label>
+        <div class="content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+          deleniti ratione ullam illo sunt aliquid id sequi asperiores.
+          Corporis, ipsa libero nulla quaerat dolore officiis expedita
+          reprehenderit tempore hic id?
+        </div>
+      </li>
+
+      <li>
+        <input type="radio" name="accordion" id="third" />
+        <label for="third">Questions</label>
+        <div class="content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+          deleniti ratione ullam illo sunt aliquid id sequi asperiores.
+          Corporis, ipsa libero nulla quaerat dolore officiis expedita
+          reprehenderit tempore hic id?
+        </div>
+      </li>
+
+      <li>
+        <input type="radio" name="accordion" id="fourth"  />
+        <label for="fourth">Guides</label>
+        <div class="content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+          deleniti ratione ullam illo sunt aliquid id sequi asperiores.
+          Corporis, ipsa libero nulla quaerat dolore officiis expedita
+          reprehenderit tempore hic id?
+        </div>
+      </li>
+
+    </ul>
+  </body>
+</html>

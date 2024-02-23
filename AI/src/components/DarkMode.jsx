@@ -1,7 +1,25 @@
 import React from "react";
 import "./Darkmode.css";
+// import { ReactComponent as Moon } from './Moon.svg';
+import Moon from '../components/Moon.svg';
+import sun from "../components/Sun.svg";
+
 
 const DarkMode = () => {
+    const setDarkMode = () => {
+        document.querySelector("body").setAttribute('data-theme', 'dark')
+        localStorage.setItem("selectedTheme", "dark")
+    }
+    const setLightMode = () => {
+        document.querySelector("body").setAttribute('data-theme', 'light')
+        localStorage.setItem("selectedTheme", "light")
+    }
+    const selectedTheme = localStorage.getItem("selectedTheme")
+    if (selectedTheme == "dark") setDarkMode()
+    const toggleTheme = (e) => {
+        if (e.target.checked) setDarkMode()
+        else setLightMode()
+    }
     return (
         <div className='dark_mode'>
 
@@ -9,9 +27,12 @@ const DarkMode = () => {
                 className='dark_mode_input'
                 type='checkbox'
                 id='darkmode-toggle'
+                onChange={toggleTheme}
+                defaultChecked={selectedTheme==="dark"}
             />
             <label className='dark_mode_label' htmlFor='darkmode-toggle'>
-
+           <img className="sun" src={sun} />
+           <img className="moon" src={Moon} />
             </label>
         </div>
     );

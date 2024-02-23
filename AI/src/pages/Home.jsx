@@ -1,14 +1,17 @@
 import React from "react";
+import "./Home.css";
 import logo from "./logo (2).png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 function Home() {
   return (
     <div>
       <div className="grid grid-cols-2 grid-rows-5 gap-4">
         {/* line 1 */}
-        <div className="border-purple-500 border p-5 pl-6 w-fit">
-          <div className="flex flex-col border-purple-500 border">
+        <div className="m-9 p-4 w-fit">
+          <div className="flex flex-col ">
             <a
-              className="flex items-center gap-1 bg-pink-500 w-fit pl-2 pt-1 pr-2 pb-1 rounded-full font-Fredoka text-sm"
+              className=" mb-8 flex items-center gap-1 ad-blue w-fit pl-2 pt-1 pr-2 pb-1 rounded-full font-Fredoka text-sm"
               href=""
             >
               <span className="w-6">
@@ -20,18 +23,32 @@ function Home() {
               </p>
             </a>
           </div>
-          <div className=" font-Varela text-7xl">
+          <div className=" font-Varela text-7xl  text-[color:var(--text-color)] ">
             <div className=" flex">
               <div>
-                <p>The Next <br /> <span>Generation</span></p>
+                <p>
+                  The Next <br />{" "}
+                  <span className=" bg-gradient-radial leading-snug  inline-block text-transparent bg-clip-text">
+                    Generation
+                  </span>
+                </p>
               </div>
-              <div className="font-Fredoka text-lg">
-                <a href="">Get Started</a>
+              <div className=" ml-10 mt-3 font-Fredoka leading-6 flex text-lg border-2 w-24 h-24 p-10 rounded-full border-blue-200 items-center justify-center  ">
+                <a className="" href="">
+                  Get &nbsp;
+                  <span>
+                    <FontAwesomeIcon
+                      className=" text-xs"
+                      icon={faArrowUpRightFromSquare}
+                    />
+                  </span>
+                  Started
+                </a>
               </div>
             </div>
-            <span>Payment Method</span>
+            <span>Payment Method.</span>
           </div>
-          <div>
+          <div className=" font-Fredoka w-[color:var(--div-width)] p-2 text-lg text-[color:var(--text-color)] ">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error
             labore expedita vel explicabo, suscipit maxime impedit perspiciatis.
             Id maxime repellat itaque porro, minus doloribus dolorem iusto
@@ -47,15 +64,55 @@ function Home() {
         </div>
 
         {/* line 2 */}
-        <div></div>
-        <div></div>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+          accusantium maxime autem illum. Atque, repellat consequatur pariatur
+          soluta error amet, non aperiam esse aliquam quos ipsum mollitia sint,
+          architecto maxime.
+        </div>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+          accusantium maxime autem illum. Atque, repellat consequatur pariatur
+          soluta error amet, non aperiam esse aliquam quos ipsum mollitia sint,
+          architecto maxime.
+        </div>
 
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+          accusantium maxime autem illum. Atque, repellat consequatur pariatur
+          soluta error amet, non aperiam esse aliquam quos ipsum mollitia sint,
+          architecto maxime.
+        </div>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+          accusantium maxime autem illum. Atque, repellat consequatur pariatur
+          soluta error amet, non aperiam esse aliquam quos ipsum mollitia sint,
+          architecto maxime.
+        </div>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+          accusantium maxime autem illum. Atque, repellat consequatur pariatur
+          soluta error amet, non aperiam esse aliquam quos ipsum mollitia sint,
+          architecto maxime.
+        </div>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+          accusantium maxime autem illum. Atque, repellat consequatur pariatur
+          soluta error amet, non aperiam esse aliquam quos ipsum mollitia sint,
+          architecto maxime.
+        </div>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+          accusantium maxime autem illum. Atque, repellat consequatur pariatur
+          soluta error amet, non aperiam esse aliquam quos ipsum mollitia sint,
+          architecto maxime.
+        </div>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+          accusantium maxime autem illum. Atque, repellat consequatur pariatur
+          soluta error amet, non aperiam esse aliquam quos ipsum mollitia sint,
+          architecto maxime.
+        </div>
       </div>
     </div>
   );

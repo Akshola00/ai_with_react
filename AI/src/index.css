@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+/* :root {
+    --text-color: red;
+    --text-size: 5rem;
+  } */
+:root{
+    --body-backgorund: white;
+    --text-color: #333333;
+    --link-color: navy;
+    --search-outline-style: solid; 
+    --div-width: 75%;
+}
+
+[data-theme = "dark"] {
+    --body-backgorund: #191919;
+    --text-color:#E0E0E0;
+    --link-color:cyan;
+    --search-outline-style: none; 
+}
+body {
+    background: var(--body-backgorund);
+}
+*{
+    transition: all .1s ease-in-out;
+}
