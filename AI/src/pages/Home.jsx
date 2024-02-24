@@ -3,6 +3,14 @@ import "./Home.css";
 import logo from "./logo (2).png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+
+
+
+import 'accordion-slider-js/css/core';
+import 'accordion-slider-js/css/buttons';
+import 'accordion-slider-js/css/layers';
+import 'accordion-slider-js/css/touch-swipe';
+import 'accordion-slider-js/css/video';
 function Home() {
   return (
     <div>
@@ -11,7 +19,7 @@ function Home() {
         <div className="m-9 p-4 w-fit">
           <div className="flex flex-col ">
             <a
-              className=" mb-8 flex items-center gap-1 ad-blue w-fit pl-2 pt-1 pr-2 pb-1 rounded-full font-Fredoka text-sm"
+              className=" mb-8 flex items-center gap-1 bg-blue-200 w-fit pl-2 pt-1 pr-2 pb-1 rounded-full font-Fredoka text-sm"
               href=""
             >
               <span className="w-6">
