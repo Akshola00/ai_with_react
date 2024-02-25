@@ -3,14 +3,6 @@ import "./Home.css";
 import logo from "./logo (2).png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
-
-
-
-import 'accordion-slider-js/css/core';
-import 'accordion-slider-js/css/buttons';
-import 'accordion-slider-js/css/layers';
-import 'accordion-slider-js/css/touch-swipe';
-import 'accordion-slider-js/css/video';
 function Home() {
   return (
     <div>
@@ -36,9 +28,20 @@ function Home() {
               <div>
                 <p>
                   The Next <br />{" "}
-                  <span className=" bg-gradient-radial leading-snug  inline-block text-transparent bg-clip-text">
-                    Generation
-                  </span>
+                  <div className="   h-20 overflow-hidden flex flex-col">
+                    <span className=" bg-gradient-radial leading-snug  inline-block text-transparent bg-clip-text">
+                      Generation
+                    </span>
+                    <span className=" bg-gradient-radial leading-snug  inline-block text-transparent bg-clip-text">
+                      Advanced
+                    </span>
+                    <span className=" bg-gradient-radial leading-snug  inline-block text-transparent bg-clip-text">
+                      Version
+                    </span>
+                    <span className=" bg-gradient-radial leading-snug  inline-block text-transparent bg-clip-text">
+                      Generation
+                    </span>
+                  </div>
                 </p>
               </div>
               <div className=" ml-10 mt-3 font-Fredoka leading-6 flex text-lg border-2 w-24 h-24 p-10 rounded-full border-blue-200 items-center justify-center  ">
@@ -63,20 +66,60 @@ function Home() {
             sapiente saepe. Doloremque, sit?
           </div>
         </div>
-        <div>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis
-          illo animi quae repellat, debitis aliquid quidem eius ex eum nihil
-          vitae iure odio totam molestias ipsa facere sed placeat repellendus.
-          Saepe, ipsa corporis illum laborum fugiat alias, quo possimus natus
-          commodi quasi quas eaque voluptate!
+        <div className=" rounded-2xl flex items-center justify-center formbg">
+          <div className="myoverlay"></div> 
+           <form
+            className="p-8 font-Fredoka flex flex-col gap-6 w-1/2 bg-[color:var(--body-backgorund)] text-[color:var(--text-color)] rounded-xl sd"
+            action=""
+          >
+            <p className=" flex items-center justify-center font-semibold text-lg">
+              We Are Offering 14 Days Free Trial
+            </p>
+            <div className="flex flex-col gap-3">
+              <label htmlFor="">
+                First Name <span className=" text-blue-500">*</span>{" "}
+              </label>
+              <input
+                className=" p-2 text-lg border-2 rounded-lg outline-none"
+                type="text"
+                value={"lorem ipsun"}
+              />
+            </div>
+            <div className="flex flex-col">
+              <label htmlFor="">
+                Last Name <span className=" text-blue-500">*</span>{" "}
+              </label>
+              <input
+                className=" p-2 text-lg border-2 rounded-lg outline-none"
+                type="text"
+              />
+            </div>
+            <div className="flex flex-col">
+              <label htmlFor="">
+                Email <span className=" text-blue-500">*</span>{" "}
+              </label>
+              <input
+                className=" p-2 text-lg border-2 rounded-lg outline-none"
+                type="text"
+              />
+            </div>
+            <button
+              type="submit"
+              className=" bg-[color:var(--link-color)] p-3 rounded-lg text-white bg-bl"
+            >
+              FREE TRIAL
+            </button>
+          </form> 
         </div>
 
         {/* line 2 */}
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-          accusantium maxime autem illum. Atque, repellat consequatur pariatur
-          soluta error amet, non aperiam esse aliquam quos ipsum mollitia sint,
-          architecto maxime.
+        <div className="master items-center justify-center flex gap-5 font-Fredoka bg-blue-400">
+          <div> 3800+ USER ACTIVE </div>
+          <span> | </span>
+          <div> 230+ TRUSTED BY COMPANY </div>
+          <span> | </span>
+          <div> $230M+ TRANSACTION </div>
+          
         </div>
         <div>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi

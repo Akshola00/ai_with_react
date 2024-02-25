@@ -1,8 +1,47 @@
 .bg-gradient-radial {
-    background-image:  radial-gradient(circle, rgba(10,124,182,1) 0%, rgba(3,84,179,1) 100%)
-    
+  background-image: radial-gradient(
+    circle,
+    rgba(10, 124, 182, 1) 0%,
+    rgba(3, 84, 179, 1) 100%
+  );
+  animation: autoscroll 15s infinite;
 }
-.ad-blue{
-    background-color: #7FC7D9;
+.ad-blue {
+  background-color: #7fc7d9;
 }
+.formbg {
+  background: url(./andrew-neel-cckf4TsHAuw-unsplash.jpg);
+  background-size: contain;
   
+}
+.master{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  align-self: start;
+}
+@keyframes autoscroll {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-100px);
+  }
+  35% {
+    transform: translateY(-100px);
+  }
+  60% {
+    transform: translateY(-200px);
+  }
+  65% {
+    transform: translateY(-200px);
+  }
+  90% {
+    transform: translateY(-300px);
+  }
+  100% {
+    transform: translateY(-300px);
+  }
+}

@@ -11,15 +11,18 @@
 :root{
     --body-backgorund: white;
     --text-color: #333333;
-    --link-color: navy;
+    --link-color:rgb(59, 130, 246);
     --search-outline-style: solid; 
     --div-width: 75%;
+    
+
+    /* background-color: rgb(30 58 138 / var(--tw-bg-opacity)); */
 }
 
 [data-theme = "dark"] {
     --body-backgorund: #191919;
     --text-color:#E0E0E0;
-    --link-color:cyan;
+    --link-color:rgb(30 58 138);
     --search-outline-style: none; 
 }
 body {
