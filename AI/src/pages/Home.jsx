@@ -4,7 +4,9 @@ import logo from "./logo (2).png";
 import star from "./star.png";
 import send from "./send.png";
 import folder from "./folder.png";
-import p1 from "./luis-villasmil-hh3ViD0r0Rc-unsplash.jpg";
+import p1 from "./matheus-ferrero-W7b3eDUb_2I-unsplash.jpg";
+import p2 from "./luis-villasmil-hh3ViD0r0Rc-unsplash.jpg";
+import p3 from "./toa-heftiba-O3ymvT7Wf9U-unsplash.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowUpRightFromSquare,
@@ -210,79 +212,75 @@ function Home() {
             buisness anywhere on the planet.
           </div>
         </div>
-        <div className="master pt-10 pl-10 pr-0 pb-0 text-center bg-slate-400 text-amber-500">
-          <div className="inner max-w-7xl m-auto overflow-hidden pt-0 pl-0 pr-5 pb-5 ">
-            <h1>Testimonials</h1>
-            <div className="border w-40 h-1 bg-green-600 mt-7 ml-7 mr-auto mb-auto"></div>
-            <div className="row flex flex-wrap justify-center">
-              <div className="colcss box-border p-4">
-                <div className="testimonial bg-slate-800 p-8">
-                  <img className=" w-24 h-24 rounded-full" src={p1} alt="john" />
-                  <div className="name">Full Name</div>
-                  <div className="star">
-                    <FontAwesomeIcon className=" text-xs" icon={faStar} />
-                    <FontAwesomeIcon className=" text-xs" icon={faStar} />
-                    <FontAwesomeIcon className=" text-xs" icon={faStar} />
-                    <FontAwesomeIcon className=" text-xs" icon={faStar} />
-                    <FontAwesomeIcon className=" text-xs" icon={faStar} />
-                    <FontAwesomeIcon className=" text-xs" icon={faStar} />
-                  </div>
-                  <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Minima atque eum neque et ex, quibusdam porro. Obcaecati
-                    libero, possimus dolorem, corporis inventore sequi sit quos
-                    aliquam adipisci quibusdam reprehenderit dolore.
-                  </p>
-                </div>
-              </div>{" "}
-              {/* <div className="col">
-                <div className="testimonial">
-                  <img src={p1} alt="" /> 
-                  <div className="name">Full Name</div>
-                  <div className="star">
-                    <FontAwesomeIcon className=" text-xs" icon={faStar} />
-                    <FontAwesomeIcon className=" text-xs" icon={faStar} />
-                    <FontAwesomeIcon className=" text-xs" icon={faStar} />
-                    <FontAwesomeIcon className=" text-xs" icon={faStar} />
-                    <FontAwesomeIcon className=" text-xs" icon={faStar} />
-                    <FontAwesomeIcon className=" text-xs" icon={faStar} />
-                  </div>
-                  <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Minima atque eum neque et ex, quibusdam porro. Obcaecati
-                    libero, possimus dolorem, corporis inventore sequi sit quos
-                    aliquam adipisci quibusdam reprehenderit dolore.
-                  </p>
-                </div>
-              </div> */}{" "}
-              {/* <div className="col">
-                <div className="testimonial">
-                  <img src={p1} alt="" />
-                  <div className="name">Full Name</div>
-                  <div className="star">
-                    <FontAwesomeIcon className=" text-xs" icon={faStar} />
-                    <FontAwesomeIcon className=" text-xs" icon={faStar} />
-                    <FontAwesomeIcon className=" text-xs" icon={faStar} />
-                    <FontAwesomeIcon className=" text-xs" icon={faStar} />
-                    <FontAwesomeIcon className=" text-xs" icon={faStar} />
-                    <FontAwesomeIcon className=" text-xs" icon={faStar} />
-                  </div>
-                  <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Minima atque eum neque et ex, quibusdam porro. Obcaecati
-                    libero, possimus dolorem, corporis inventore sequi sit quos
-                    aliquam adipisci quibusdam reprehenderit dolore.
-                  </p>
-                </div>
-              </div> */}
+        <div className="master text-[color:var(--text-color)] font-Fredoka  p-12 flex gap-4 items-center justify-center">
+          <div className=" obg w-96  p-4 rounded-2xl flex flex-col gap-6">
+            <span className=" text-8xl pt-9 flex items-center relative">
+              <span className=" absolute">"</span>
+            </span>
+            <p className=" text-xl">
+              money is only a tool. it will take you wherever you wish, but it
+              will not replace you as the driver
+            </p>
+            <div className=" flex items-center gap-2">
+              <div className=" w-14 h-14 rounded-full overflow-hidden object-center object-contain">
+                <img className="w-full" src={p2} alt="" />
+              </div>
+              <div className="flex flex-col">
+                <h3 className=" font-medium text-xl ">Kenn Gallagher Jensen</h3>
+                <p className="text-gray-500 text-base">Nationalist & Speaker</p>
+              </div>
+            </div>
+          </div>
+          <div className=" w-96 obg p-4 rounded-2xl flex flex-col gap-6">
+            <span className=" text-8xl pt-9 flex items-center relative">
+              <span className=" absolute">"</span>
+            </span>
+            <p className=" text-xl">
+              money makes your life easier, if you're lucky to have it, youre
+              lucky.
+            </p>
+            <div className=" flex items-center gap-2">
+              <div className=" w-14 h-14 rounded-full overflow-hidden object-center object-contain">
+                <img className="w-full" src={p1} alt="" />
+              </div>
+              <div className="flex flex-col">
+                <h3 className=" font-medium text-xl ">Steve Mark</h3>
+                <p className="text-gray-500 text-base">Tech Enthusiast</p>
+              </div>
+            </div>
+          </div>
+          <div className=" w-96 obg p-4 rounded-2xl flex flex-col gap-6">
+            <span className=" text-8xl pt-9 flex items-center relative">
+              <span className=" absolute">"</span>
+            </span>
+            <p className=" text-xl">
+              It is usually people in the money buisness, finance, and
+              international trade that are really rich.
+            </p>
+            <div className=" flex items-center gap-2">
+              <div className=" w-14 h-14 rounded-full overflow-hidden object-center object-contain">
+                <img className="w-full" src={p3} alt="" />
+              </div>
+              <div className="flex flex-col">
+                <h3 className=" font-medium text-xl ">Herman Jensen</h3>
+                <p className="text-gray-500 text-base">Founder & Leader</p>
+              </div>
             </div>
           </div>
         </div>
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-          accusantium maxime autem illum. Atque, repellat consequatur pariatur
-          soluta error amet, non aperiam esse aliquam quos ipsum mollitia sint,
-          architecto maxime.
+        <div className="master font-Fredoka p-16  text-[color:var(--text-color)] ">
+          <div className="flex obg  p-6 items-center justify-evenly">
+            <div className="flex flex-col gap-3">
+              <p className="text-5xl">Lets try our service now!</p>
+              <p className="text-xl">
+                Everything you need to accept card payments <br /> and grow businesses
+                anywhere on the planet
+              </p>
+            </div>
+            <div>
+              <button className=" pt-2 pb-2 pl-6 pr-6 text-lg font-Fredoka rounded-lg bg-[color:var(--link-color)] text-white">Get Started</button>
+            </div>
+          </div>
         </div>
         <div>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi

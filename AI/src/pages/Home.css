@@ -14,18 +14,18 @@
     rgba(34, 193, 195, 1) 0%,
     rgba(30, 22, 185, 1) 66%
   );
-  color: #434343;
+}
+.obg{
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2); 
 }
 .colcss {
   flex: 33.333%;
   max-width: 33.3%;
-  
 }
 .mybxw {
   width: 33rem;
 }
 .linksbg {
-  
   background: linear-gradient(to right, #0cbaba, #4e55bb);
 }
 .ad-blue {
