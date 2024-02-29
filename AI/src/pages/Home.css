@@ -15,6 +15,14 @@
     rgba(30, 22, 185, 1) 66%
   );
 }
+.mbg {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgb(156, 156, 156) 0%,
+    rgb(139, 114, 114) 66%
+  );
+}
 .obg{
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2); 
 }

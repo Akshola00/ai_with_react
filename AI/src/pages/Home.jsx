@@ -8,10 +8,7 @@ import p1 from "./matheus-ferrero-W7b3eDUb_2I-unsplash.jpg";
 import p2 from "./luis-villasmil-hh3ViD0r0Rc-unsplash.jpg";
 import p3 from "./toa-heftiba-O3ymvT7Wf9U-unsplash.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faArrowUpRightFromSquare,
-  faStar,
-} from "@fortawesome/free-solid-svg-icons";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 function Home() {
   return (
     <div>
@@ -268,31 +265,67 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="master font-Fredoka p-16  text-[color:var(--text-color)] ">
-          <div className="flex obg  p-6 items-center justify-evenly">
+        <div className="master font-Fredoka p-16  ">
+          <div className="flex border rounded-2xl  bg-blue-200 p-6 items-center justify-evenly">
             <div className="flex flex-col gap-3">
               <p className="text-5xl">Lets try our service now!</p>
               <p className="text-xl">
-                Everything you need to accept card payments <br /> and grow businesses
-                anywhere on the planet
+                Everything you need to accept card payments <br /> and grow
+                businesses anywhere on the planet
               </p>
             </div>
             <div>
-              <button className=" pt-2 pb-2 pl-6 pr-6 text-lg font-Fredoka rounded-lg bg-[color:var(--link-color)] text-white">Get Started</button>
+              <button className=" pt-2 pb-2 pl-6 pr-6 text-lg font-Fredoka rounded-lg bg-[color:var(--link-color)] text-white">
+                Get Started
+              </button>
             </div>
           </div>
         </div>
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-          accusantium maxime autem illum. Atque, repellat consequatur pariatur
-          soluta error amet, non aperiam esse aliquam quos ipsum mollitia sint,
-          architecto maxime.
-        </div>
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-          accusantium maxime autem illum. Atque, repellat consequatur pariatur
-          soluta error amet, non aperiam esse aliquam quos ipsum mollitia sint,
-          architecto maxime.
+        <div className="master pt-16 pl-20 pr-20 pb-4  bg-gray-200 flex flex-col">
+          <div className="lorem flex items-center justify-evenly">
+            <div className=" p-4 w-72 h-72 flex flex-col gap-2">
+              <div className="flex items-center">
+                <img className="w-10 h-10" src={logo} alt="" />
+                <p className=" font-Anta text-4xl">JohnAI</p>
+              </div>
+              <p className=" font-Fredoka text-lg">
+                A new way to make payments easy reliable and secure
+              </p>
+            </div>
+            <div className=" p-4 font-Fredoka flex flex-col gap-4 text-lg   w-72 h-72">
+              <p className=" font-medium">Useful Links</p>
+              <a href="">Content</a>
+              <a href="">How it works</a>
+              <a href="">Create</a>
+              <a href="">Explore</a>
+              <a href="">Terms & Services</a>
+            </div>
+            <div className=" p-4 font-Fredoka flex flex-col gap-4 text-lg   w-72 h-72">
+              <p className=" font-medium">Community</p>
+              <a href="">Help Center</a>
+              <a href="">Partners</a>
+              <a href="">Suggestions</a>
+              <a href="">Blog</a>
+              <a href="">Newsletters</a>
+            </div>
+            <div className=" p-4 font-Fredoka flex flex-col gap-4 text-lg   w-72 h-72">
+              <p className=" font-medium">Partner</p>
+              <a href="">Our Partner</a>
+              <a href="">Become a partner</a>
+            </div>
+          </div>
+          <div className=" font-Fredoka pr-20 pl-16 flex justify-between">
+            <div className="flex text-lg gap-4">
+              <div> Copyright &copy; </div>
+              <div>2021 JohnAI. All Right Reserved.</div>
+            </div>
+            <div className="flex gap-4 text-xl">
+              <p><FontAwesomeIcon icon="fa-brands fa-instagram" /></p>
+              <p>john</p>
+              <p>john</p>
+              <p>john</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
