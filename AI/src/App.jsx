@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Nav />
-      <Home />
+      <Home /> lorem
       {/* <Accordion /> */}
     </>
   )
